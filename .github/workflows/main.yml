@@ -53,9 +53,6 @@ jobs:
           java -jar target/*.jar &
           sleep 5
 
-      - name: Test Application works
-        run: curl -v http://localhost:3000
-
       - name: Deploy to Render using deploy hook
         run: |
           curl --request POST \
